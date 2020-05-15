@@ -6,6 +6,9 @@
 #include <functional>
 #include <stdexcept>
 #include "container.hpp"
+#include "classA.h"
+#include "classB.h"
+
 using namespace std;
 
 // Внимание!
@@ -343,6 +346,9 @@ bool test14()
 
 int main()
 {
+    A a;
+    B b;
+
     vector<function<bool(void)>> tests = {test1, test2, test3, test4,test5, test6, test7, test8, test9, test10,
                                           test11, test12, test13, test14};
 
